@@ -1,4 +1,4 @@
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const tabla = document.getElementById('tabla-numeros');
 
 // Crear la tabla  
@@ -170,4 +170,4 @@ async function procesarTodosLosFeeds() {
   
 // INICIO  
 procesarTodosLosFeeds();
-}
+})
