@@ -140,7 +140,7 @@ async function procesarTodosLosFeeds() {
         if (!title.toLowerCase().includes('hoy:') || !pubDate) return;  
         if (itemsProcesados.includes(pubDate)) return;  
   
-        const match = title.match(/:[:\s]*([\d]{2})[-,\s]+([\d]{2})[-,\s]+([\d]{2})/i);  
+        const match = title.match(/hoy[:\s]*([\d]{2})[-,\s]+([\d]{2})[-,\s]+([\d]{2})/i);  
         if (!match) return;  
   
         const numeros = match.slice(1);  
@@ -170,4 +170,4 @@ async function procesarTodosLosFeeds() {
   
 // INICIO  
 procesarTodosLosFeeds();
-});
+}
